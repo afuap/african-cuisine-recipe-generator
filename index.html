@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI African Recipes Generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter African country for recipe ideas"
@@ -25,20 +26,22 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="recipe">Recipe goes here:</div>
+        <div class="recipe" id="recipe"></div>
       </main>
+
+      <footer>
+        This AI project coded by Georgina Pobi and is
+        <a
+          href="https://github.com/afuap/african-cuisine-recipe-generator"
+          target="_blank"
+          >Opened sourced on GitHub</a
+        >. Hosted on
+        <a href="https://african-cuisine-recipes.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
     </div>
-    <footer>
-      This AI project coded by Georgina Pobi and is
-      <a
-        href="https://github.com/afuap/african-cuisine-recipe-generator"
-        target="_blank"
-        >Opened sourced on GitHub</a
-      >. Hosted on
-      <a href="https://african-cuisine-recipes.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
