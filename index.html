@@ -15,20 +15,22 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter African country for recipe ideas"
-            autofocus
-            required
-            autocomplete="off"
-            class="information"
-            id="information"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter African country for recipe ideas"
+              autofocus
+              required
+              autocomplete="off"
+              class="information"
+              id="information"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Ghana, Nigeria, or Ethiopia</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
